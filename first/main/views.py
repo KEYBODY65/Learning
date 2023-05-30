@@ -2,7 +2,11 @@ from django.shortcuts import render
 
 
 def index(request):  # Здесь мы описываем, что мы будем показывать пользователю
-    return render(request, 'main/index.html')
+    data = {
+        'title': 'Главная страница!!',
+        'values': ['Misha', 'Ivan', 'Hello']
+    }
+    return render(request, 'main/index.html', data)
 
 
 def about(request):

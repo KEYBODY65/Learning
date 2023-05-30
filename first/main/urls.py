@@ -21,4 +21,5 @@ urlpatterns = [
     path('', views.index, name='home'), # Обращаемся к функции в views - там и будет происходить обработка
     path('about/', views.about, name='about'),
     path('contacts/', views.contacts, name='contacts')
+
 ]

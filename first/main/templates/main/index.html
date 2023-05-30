@@ -5,9 +5,13 @@
 
 {% block content %}
 <div class="features">
-    <h1>Главная страница</h1>
+    <h1>{{ title }}</h1>
     <p>Misha Popov - the best of the bests</p>
     <button class="btn btn-warning"> На страницу про нас</button>
-
+    {% for elem in values %}
+        {% if elem == 'Hello' %}
+                <p>{{ elem|upper }}</p>
+        {% endif %}
+    {% endfor %}
 </div>
 {% endblock %}
