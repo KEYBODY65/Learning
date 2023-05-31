@@ -23,6 +23,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls), # Отслеживание url-адресов /admin - открывает панель администратора admin.site.urls
-    path('', include('main.urls')) # При переходе на главную стриничку '', вызываем файл main.urls с помщью include
+    path('', include('main.urls')), # При переходе на главную стриничку '', вызываем файл main.urls с помщью include
+    path('news/', include('news.urls')) # люой переход, начинающийся с news, будет переадресовываться на news.urls
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
