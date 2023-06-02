@@ -3,8 +3,23 @@
 {% block title %}Новости{% endblock %}
 
 {% block content %}
-    <h1>Новости на сатйе</h1>
-    <h3>Миша обосрался</h3>
+    <div class="features">
+    <h1>Новости на сатйе:</h1>
+    {% if news %}
+        {% for elem in news %}
+            <div class="alert alert-warning">
+                <h3>{{elem.date}}</h3>
+                <h3>{{elem.title}}</h3>
+                <h3>{{elem.anons}}</h3>
+                <h3>{{elem.text}}</h3>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p> Актуальные новости отсутствуют </p>
+    {% endif %}
+
+     {# Это комментарий #}
+   </div>
 {% endblock %}
 
 
