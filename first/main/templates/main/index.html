@@ -7,7 +7,7 @@
 <div class="features">
     <h1>{{ title }}</h1>
     <p>Misha Popov - the best of the bests</p>
-    <button class="btn btn-warning"> На страницу про нас</button>
+    <a href="{% url 'about' %}"><button class="btn btn-warning"> На страницу про нас </button></a>
     {% for elem in values %}
         {% if elem == 'Hello' %}
                 <p>{{ elem|upper }}</p>

@@ -8,10 +8,10 @@
     {% if news %}
         {% for elem in news %}
             <div class="alert alert-warning">
-                <h3>{{elem.date}}</h3>
-                <h3>{{elem.title}}</h3>
-                <h3>{{elem.anons}}</h3>
-                <h3>{{elem.text}}</h3>
+                <h3>Дата: {{elem.date}}</h3>
+                <h3>Название: {{elem.title}}</h3>
+                <h3>Анонс: {{elem.anons}}</h3>
+                <h3>Текст: {{elem.text}}</h3>
             </div>
         {% endfor %}
     {% else %}

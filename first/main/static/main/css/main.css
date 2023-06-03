@@ -2,7 +2,7 @@ body {
     background: #2c2c2c;
 }
 
-aside{
+aside {
     float: left;
     background: #181818;
     width: 30%;
@@ -20,7 +20,7 @@ aside img{
 
 aside .logo{
     font-size: 30px;
-    margin-left: 10px;
+    margin-left: -5px;
     font-weight: bold;
     position: relative;
     top: 18px;
@@ -47,7 +47,8 @@ aside ul li:hover, aside ul a: hover {
 
 main .features{
     color: #fff;
-    margin-top: 100px;
+    margin-left: 20%;
+    margin-top: 200px;
     text-align: center;
     width: 75%;
 }
@@ -62,6 +63,12 @@ main .features p {max-width: 400px; margin:20px auto}
     margin: 20px 34%;
     text-align: left;
 
+}
+
+form {
+    margin-left: 25%;
+    width: 500px;
+    margin-top:50px;
 }
 
 
