@@ -16,12 +16,10 @@ Including another URLconf
 """
 from django.urls import path
 from . import views
-
-from django.conf import settings
-from django.conf.urls.static import static
+from .views import Detail_Views
 
 urlpatterns = [
     path('', views.news_home, name='news_home'),
-    path('create', views.create, name='create')  # имя нужно для указания ссылки в темплжте
-
+    path('create', views.create, name='create'),  # имя нужно для указания ссылки в темплжте
+    path('<int:pk>', Detail_Views.as_view(), name='news-details')  # для открыктия полного описания записи
 ]

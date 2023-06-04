@@ -12,6 +12,7 @@
                 <h3>Название: {{elem.title}}</h3>
                 <h3>Анонс: {{elem.anons}}</h3>
                 <h3>Текст: {{elem.text}}</h3>
+                <a href="{% url 'news-details' elem.id %}" class="btn btn-warning">Читать польностью</a> <!-- el.id - порядковый номер определённой статьи -->
             </div>
         {% endfor %}
     {% else %}
