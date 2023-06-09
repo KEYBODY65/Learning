@@ -31,7 +31,7 @@ aside h3{
     font-size: 25px;
 }
 
-aside ul {list-style: none}
+aside a {text-decoration: none}
 aside ul li{
     color: #fff;
     display: block;
@@ -54,7 +54,7 @@ main .features{
 }
 
 main .features h1 {font-size: 50px;}
-main .features p {max-width: 400px; margin:20px auto}
+main .features p {max-width: 400px;  gin:20px auto}
 
 .alert-warning{
     float: left;

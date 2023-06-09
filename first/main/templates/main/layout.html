@@ -12,17 +12,19 @@
 </head>
 <body>
     <aside>
-        <img src="{% static 'main/img/Снимок экрана 2023-05-30 151606.png' %}" alt="logo">
-        <span class="logo">Иван Никитин</span>
-        <h3> Навигация </h3>
+        <div>
+            <img src="{% static 'main/img/Снимок экрана 2023-05-30 151606.png' %}" alt="logo">
+            <span class="logo">Иван Никитин</span>
+            <h3> Навигация </h3>
 
-        <ul>
-            <a href="{% url 'home' %}"><li><i class="fas fa-home"></i> Главная </li></a>
-            <a href="{% url 'about' %}"><li><i class="fas fa-address-card"></i> О нас </li></a>
-            <a href="{% url 'news_home' %}"><li><i class="fas fa-newspaper"></i> Новости </li></a>
-            <a href="{% url 'contacts' %}"><li><i class="fas fa-phone"></i> Контакты </li></a>
-            <a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="fas fa-pen"></i>Добавить запись </li></a>
-        </ul>
+            <ul>
+                <a href="{% url 'home' %}"><li><i class="fas fa-home"></i> Главная </li></a>
+                <a href="{% url 'about' %}"><li><i class="fas fa-address-card"></i> О нас </li></a>
+                <a href="{% url 'news_home' %}"><li><i class="fas fa-newspaper"></i> Новости </li></a>
+                <a href="{% url 'contacts' %}"><li><i class="fas fa-phone"></i> Контакты </li></a>
+                <a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="fas fa-pen"></i>Добавить запись </li></a>
+            </ul>
+        </div>
     </aside>
     <main>
         {% block content %} <!-- Опрелённая секция, её мы будем изменять -->

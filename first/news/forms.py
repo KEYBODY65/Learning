@@ -1,6 +1,5 @@
 from .models import Articles
 from django.forms import ModelForm, TextInput, DateTimeInput, Textarea
-from django.utils.datastructures import MultiValueDict
 
 
 class Articles_Form(ModelForm):
